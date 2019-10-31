@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://sipo.netlify.com',
-        sitemap: 'https://sipo.netlify.com/sitemap.xml',
+        host: 'https://osap.netlify.com',
+        sitemap: 'https://osap.netlify.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       },
     },
