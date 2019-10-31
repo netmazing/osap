@@ -6,7 +6,7 @@ module.exports = {
     title: `Socjologia i psychologia organizacji`,
     description: `Interdyscyplinarny zespół badawczy`,
     author: `Trojnacki & Draganek`,
-    siteUrl: `https://sipo.netlify.com`,
+    siteUrl: `https://osap.netlify.com`,
     titleEn: `Organizational Socjology and Psychology`,
     descriptionEn: `Interdisciplinary Research Group`
   },
