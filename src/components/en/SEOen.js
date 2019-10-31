@@ -6,8 +6,8 @@ const getData = graphql`
 query {
     site {
       siteMetadata {
-        siteTitle:title
-        siteDescription:description
+        siteTitleEn:titleEn
+        siteDescriptionEn:descriptionEn
       }
     }
   } 
@@ -15,11 +15,11 @@ query {
 
 const SEO = ({title, description}) => {
     const {site} = useStaticQuery(getData);
-    const {siteTitle, siteDescription} = site.siteMetadata;
+    const {siteTitleEn, siteDescriptionEn} = site.siteMetadata;
     
     return (
-        <Helmet title={title ? `${title} - ${siteTitle}` : `${siteTitle}`} htmlAttributes={{lang: "pl"}}>
-            <meta name="description"  content={description || siteDescription} />
+        <Helmet title={title ? `${title} - ${siteTitleEn}` : `${siteTitleEn}`} htmlAttributes={{lang: "en"}}>
+            <meta name="description"  content={description || siteDescriptionEn} />
         </Helmet>
     )
 }
